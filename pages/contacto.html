@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajArg</title>
+    <link rel="icon" href="../img/logoico2.ico">
+    <!--Fuentes de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600&family=Suwannaphum&display=swap"
+        rel="stylesheet">
+    <!--Fuente de Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://kit.fontawesome.com/f3d9777f93.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <!----> <a href="../index.html"><img src="../img/logo.png" alt="Logo de la marca"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li> <a class="Active" href="../index.html">Menú <br>principal </a></li>
+                <li> <a href="./noroeste.html">Región<br /> Noroeste </a></li>
+                <li> <a href="./nordeste.html">Región<br> Nordeste </a></li>
+                <li> <a href="./pampeana.html">Región <br>Pampeana </a></li>
+                <li> <a href="./cuyo.html">Región de<br> Cuyo </a></li>
+                <li> <a href="./patagonia.html">Región<br> Patagónica </a></li>
+            </ul>
+        </nav>
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+
+            <div class="overlay-content">
+                <a class="Active" href="../index.html">Menú principal </a>
+                <a href="./noroeste.html">Región Noroeste </a>
+                <a href="./nordeste.html">Región Nordeste </a>
+                <a href="./pampeana.html">Región Pampeana </a>
+                <a href="./cuyo.html">Región de Cuyo </a>
+                <a href="./patagonia.html">Región Patagónica </a>
+            </div>
+        </div>
+    </header>
+    <div class="formulario">
+        <form action="" id="form">
+            <div class="form">
+                <h1 class="titulo">Contacto</h1>
+                <div class="grupo" id="nombre">
+                    <input type="text" id="nombre" class="input" name="nombre" required><span class="barra"></span>
+                    <label for="nombre">Nombre</label>
+                    <p  class="text-error"><b>El nombre NO debe contener simbolos, guiones, numeros.</b></p>
+                </div>
+                <div class="grupo" id="apellido">
+                    <input type="text" id="apellido" class="input" name="apellido" required><span class="barra"></span>
+                    <label for="apellido">Apellido</label>
+                    <p  class="text-error"><b>El apellido NO debe contener simbolos, guiones, numeros.</b></p>
+                </div>
+                <div class="grupo" id="mail">
+                    <input type="email" id="mail" class="input" name="mail" required><span class="barra"></span>
+                    <label for="mail">Mail</label>
+                    <p  class="text-error"><b>Ingresar email valido</b></p>
+                </div>
+                <div class="grupo" id="telefono">
+                    <input type="number" id="telefono" class="input" name="telefono" required><span class="barra"></span>
+                    <label for="telefono">Telefono</label>
+                    <p  class="text-error"><b>Ingresar solo numeros</b></p>
+                </div>
+                <button class="btn-enviar" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="../JS/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
